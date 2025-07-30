@@ -44,8 +44,8 @@ export default function Portfolio() {
   const downloadCV = () => {
     // Crear un enlace temporal para descargar el CV
     const link = document.createElement("a")
-    link.href = "/cv-mario-aguilera.pdf" // Asegúrate de tener este archivo en public/
-    link.download = "CV-Mario-Aguilera.pdf"
+    link.href = "/CV_MarioAguileraV2.pdf"
+    link.download = "CV_MarioAguileraV2.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -230,7 +230,7 @@ export default function Portfolio() {
               <div className="relative">
                 <div className="w-64 h-64 lg:w-80 lg:h-80 mx-auto">
                   <img
-                    src="/profile.jpg"
+                    src="/FotoLinkedin.png"
                     alt="Mario Aguilera - Desarrollador Full Stack"
                     className="w-full h-full object-cover rounded-full shadow-2xl border-4 border-[#4F8EF7]/20"
                     onError={(e) => {
@@ -265,7 +265,7 @@ export default function Portfolio() {
               <div className="mt-8">
                 <h3 className="text-xl font-semibold mb-4 text-white">Stack Tecnológico</h3>
                 <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                  {["React", "Node.js", "Python", "TypeScript", "Next.js", "PostgreSQL", "AWS", "Docker"].map(
+                  {["Angular", "Node.js", "React", "Python", "TypeScript", "Next.js", "PostgreSQL", "Azure" ].map(
                     (tech) => (
                       <motion.span
                         key={tech}
@@ -312,9 +312,9 @@ export default function Portfolio() {
               {
                 title: "Plataforma E-Commerce",
                 description:
-                  "Una solución completa de comercio electrónico con React, Node.js e integración con Stripe",
+                  "Solución completa de comercio electrónico con Woocommerce, Elementor e integración con Amelia",
                 image: "/placeholder.svg?height=200&width=300",
-                tech: ["React", "Node.js", "MongoDB", "Stripe"],
+                tech: ["WooCommerce", "Elementor", "Amelia", "Transbank"],
                 github: "#",
                 demo: "#",
               },
@@ -466,20 +466,20 @@ export default function Portfolio() {
                   {
                     icon: Mail,
                     label: "Email",
-                    value: "mario.aguilera@example.com",
-                    href: "mailto:mario.aguilera@example.com",
+                    value: "marioaguilerav15@gmail.com",
+                    href: "mailto:marioaguilerav15@gmail.com",
                   },
                   {
                     icon: Linkedin,
                     label: "LinkedIn",
                     value: "/in/marioaguilera",
-                    href: "https://linkedin.com/in/marioaguilera",
+                    href: "https://www.linkedin.com/in/mario-aguilera-valdenegro-27839427b/",
                   },
                   {
                     icon: Github,
                     label: "GitHub",
                     value: "@marioaguilera",
-                    href: "https://github.com/marioaguilera",
+                    href: "https://github.com/Mariox20",
                   },
                 ].map((contact, index) => (
                   <motion.a
@@ -512,9 +512,9 @@ export default function Portfolio() {
               <p className="text-white/60 mb-6 text-lg">¡Construyamos algo increíble juntos!</p>
               <div className="flex justify-center space-x-6">
                 {[
-                  { Icon: Github, href: "https://github.com/marioaguilera" },
-                  { Icon: Linkedin, href: "https://linkedin.com/in/marioaguilera" },
-                  { Icon: Mail, href: "mailto:mario.aguilera@example.com" },
+                  { Icon: Github, href: "https://github.com/Mariox20" },
+                  { Icon: Linkedin, href: "https://www.linkedin.com/in/mario-aguilera-valdenegro-27839427b/" },
+                  { Icon: Mail, href: "mailto:marioaguilerav15@gmail.com" },
                 ].map(({ Icon, href }, index) => (
                   <motion.a
                     key={index}
@@ -537,7 +537,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-white/20">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-white/60">© 2024 Mario Aguilera. Desarrollado con Next.js y Framer Motion.</p>
+          <p className="text-white/60">© 2025 Mario Aguilera. Desarrollado con Next.js y Framer Motion.</p>
         </div>
       </footer>
     </div>
