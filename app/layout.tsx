@@ -20,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="es" className='{GeistSans.variable}'>
       <head>
+      <script defer data-domain="maguilera.cl" src="https://plausible.io/js/script.js"></script>
         <style>{`
 html {
   font-family: ${GeistSans.style.fontFamily};
