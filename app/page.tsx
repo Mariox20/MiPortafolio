@@ -42,7 +42,7 @@ export default function Portfolio() {
   }
 
   const downloadCV = () => {
-    // Crear un enlace temporal para descargar el CV
+    //Enlace para descargar el CV
     const link = document.createElement("a")
     link.href = "/CV_MarioAguileraV2.pdf"
     link.download = "CV_MarioAguileraV2.pdf"
@@ -253,20 +253,21 @@ export default function Portfolio() {
                 Sobre Mí
               </h2>
               <p className="text-lg text-white/80 leading-relaxed">
-                Soy un desarrollador full-stack apasionado con más de 5 años de experiencia creando soluciones digitales
-                que marcan la diferencia. Me encanta convertir problemas complejos en diseños simples, hermosos e
-                intuitivos.
+                Soy un desarrollador de software con más de 2 años de experiencia en el desarrollo de aplicaciones web, 
+                trabajando con stacks como LAMP, Python, Node.js, TypeScript y Angular. Me especializo en el diseño e 
+                implementación de soluciones que optimizan procesos y mejoran la experiencia de usuario.
               </p>
               <p className="text-lg text-white/80 leading-relaxed">
-                Cuando no estoy programando, puedes encontrarme explorando nuevas tecnologías, contribuyendo a proyectos
-                de código abierto o compartiendo conocimientos con la comunidad de desarrolladores.
+                A lo largo de mi carrera he liderado equipos, automatizado flujos de trabajo y participado en proyectos de 
+                integración de sistemas y despliegue en la nube. Me motiva enfrentar nuevos desafíos tecnológicos y aplicar 
+                metodologías ágiles como Scrum para entregar valor en cada proyecto.
               </p>
 
               {/* Tech Stack */}
               <div className="mt-8">
                 <h3 className="text-xl font-semibold mb-4 text-white">Stack Tecnológico</h3>
                 <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                  {["Angular", "Node.js", "React", "Python", "TypeScript", "Next.js", "PostgreSQL", "Azure" ].map(
+                  {["Angular", "Node.js", "React", "Python", "TypeScript", "Next.js", "PostgreSQL", "Cloud" ].map(
                     (tech) => (
                       <motion.span
                         key={tech}
@@ -526,10 +527,10 @@ export default function Portfolio() {
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {[
-              { category: "Frontend", skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"] },
-              { category: "Backend", skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "GraphQL"] },
-              { category: "Herramientas", skills: ["Git", "Docker", "AWS", "Vercel", "Figma"] },
-              { category: "Otros", skills: ["Machine Learning", "DevOps", "Testing", "Agile", "Liderazgo"] },
+              { category: "Frontend", skills: ["Angular", "TypeScript", "React", "Next.js", "Tailwind CSS", "Bootstrap", "WordPress"] },
+              { category: "Backend", skills: ["Node.js", "Python", "PHP", "MySQL", "PostgreSQL", "MongoDB", "API REST"] },
+              { category: "Herramientas", skills: ["Git", "Docker", "AWS", "Vercel", "Linux", "Scrum"] },
+              { category: "Otros", skills: ["Automatización con Excel/VBA", "Testing", "DevOps", "Liderazgo", "Metodologías Ágiles"] },
             ].map((skillGroup, index) => (
               <motion.div key={index} variants={fadeInUp}>
                 <Card className="backdrop-blur-md bg-[#1A1A1A]/80 border-white/10 h-full">
