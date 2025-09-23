@@ -258,7 +258,7 @@ export default function Portfolio() {
                 implementación de soluciones que optimizan procesos y mejoran la experiencia de usuario.
               </p>
               <p className="text-lg text-white/80 leading-relaxed">
-                A lo largo de mi carrera he liderado equipos, automatizado flujos de trabajo y participado en proyectos de 
+                Durante mi carrera he liderado equipos, automatizado flujos de trabajo y participado en proyectos de 
                 integración de sistemas y despliegue en la nube. Me motiva enfrentar nuevos desafíos tecnológicos y aplicar 
                 metodologías ágiles como Scrum para entregar valor en cada proyecto.
               </p>
@@ -428,13 +428,22 @@ export default function Portfolio() {
           >
             {[
               {
-                title: "Plataforma E-Commerce",
+                title: "Poke Explorer",
                 description:
-                  "Solución completa de comercio electrónico con Woocommerce, Elementor e integración con Amelia",
-                image: "/placeholder.svg?height=200&width=300",
-                tech: ["WooCommerce", "Elementor", "Amelia", "Transbank"],
+                  "Aplicación web desarrollada como reto técnico para explorar Pokémon utilizando la API pública. Construida con React y Next.js, con despliegue en Vercel.",
+                image: "/PokeExplorerLanding.png",
+                tech: ["React", "Next.js", "Vercel", "API REST"],
+                github: "https://github.com/Mariox20/Poke-Explorer",
+                demo: "https://poke-explorer-ebon.vercel.app/",
+              },
+              {
+                title: "Sitio de Pilates FlowFit",
+                description:
+                  "Página web profesional para un estudio de pilates, desarrollada en WordPress con Elementor. Incluye sistema de reservas en línea con Amelia y pagos integrados con Transbank.",
+                image: "/FlowfitLanding.png",
+                tech: ["WordPress", "Elementor", "Amelia", "Transbank"],
                 github: "#",
-                demo: "#",
+                demo: "https://flowfit.cl/",
               },
               {
                 title: "App de Gestión de Tareas",
@@ -453,6 +462,15 @@ export default function Portfolio() {
                 github: "#",
                 demo: "#",
               },
+              {
+                title: "Cursos de Compliance",
+                description:
+                  "Plataforma de cursos de cumplimiento normativo desarrollada con PHP, MySQL y Bootstrap. Incluye sistema de login, gestión de usuarios y acceso a contenido académico.",
+                image: "/LoginCompliance.png",
+                tech: ["PHP", "MySQL", "Bootstrap"],
+                github: "#",
+                demo: "https://compliancecoval.cl/curso/index.html",
+              },              
             ].map((project, index) => (
               <motion.div key={index} variants={fadeInUp}>
                 <Card className="backdrop-blur-md bg-[#1A1A1A]/80 border-white/10 hover:bg-[#1A1A1A]/90 transition-all duration-300 group">
@@ -475,23 +493,24 @@ export default function Portfolio() {
                           </span>
                         ))}
                       </div>
-                      <div className="flex gap-4">
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          className="border-[#4F8EF7]/50 text-[#4F8EF7] hover:bg-[#4F8EF7]/10 bg-transparent"
-                        >
-                          <Github size={16} className="mr-2" />
-                          Código
-                        </Button>
-                        <Button
-                          size="sm"
-                          className="bg-gradient-to-r from-[#4F8EF7] to-[#00C896] hover:from-[#4F8EF7]/80 hover:to-[#00C896]/80"
-                        >
-                          <ExternalLink size={16} className="mr-2" />
-                          Demo
-                        </Button>
-                      </div>
+                        <div className="flex gap-4">
+                          {project.github !== "#" && (
+                            <Button asChild size="sm" variant="outline" className="border-[#4F8EF7]/50 text-[#4F8EF7] hover:bg-[#4F8EF7]/10 bg-transparent">
+                              <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                <Github size={16} className="mr-2" />
+                                Código
+                              </a>
+                            </Button>
+                          )}
+                          {project.demo !== "#" && (
+                            <Button asChild size="sm" className="bg-gradient-to-r from-[#4F8EF7] to-[#00C896] hover:from-[#4F8EF7]/80 hover:to-[#00C896]/80">
+                              <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                                <ExternalLink size={16} className="mr-2" />
+                                Demo
+                              </a>
+                            </Button>
+                          )}
+                        </div>
                     </div>
                   </CardContent>
                 </Card>
