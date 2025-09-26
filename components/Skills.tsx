@@ -44,10 +44,10 @@ export default function Skills() {
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {[
-              { category: "Frontend", skills: ["Angular", "TypeScript", "React", "Next.js", "Tailwind CSS", "Bootstrap", "WordPress"] },
-              { category: "Backend", skills: ["Node.js", "Python", "PHP", "MySQL", "PostgreSQL", "MongoDB", "API REST"] },
-              { category: "Herramientas", skills: ["Git", "Docker", "AWS", "Vercel", "Linux", "Scrum"] },
-              { category: "Otros", skills: ["Automatización con Excel/VBA", "Testing", "DevOps", "Liderazgo", "Metodologías Ágiles"] },
+              { category: "Frontend", skills: ["Angular", "TypeScript", "React", "Next.js", "Tailwind CSS", "Bootstrap"] },
+              { category: "Backend", skills: ["Node.js", "Python", "PHP", "MySQL", "PostgreSQL", "MongoDB", "REST APIs"] },
+              { category: "Herramientas", skills: ["Git", "AWS", "Azure", "Vercel", "Cloudflare", "SonarQube", "WordPress", "Centreon", "Linux"] },
+              { category: "Otros", skills: ["Automatización con Excel/VBA", "Scrum"] }
             ].map((skillGroup, index) => (
               <motion.div key={index} variants={fadeInUp}>
                 <Card className="backdrop-blur-md bg-[#1A1A1A]/80 border-white/10 h-full">
