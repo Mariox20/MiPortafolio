@@ -64,21 +64,13 @@ export default function Projects() {
                 demo: "https://flowfit.cl/",
               },
               {
-                title: "App de Gestión de Tareas",
-                description: "Una herramienta colaborativa de gestión de tareas con actualizaciones en tiempo real",
-                image: "/placeholder.svg?height=200&width=300",
-                tech: ["Next.js", "PostgreSQL", "Socket.io", "Tailwind"],
-                github: "#",
-                demo: "#",
-              },
-              {
-                title: "Asistente de Chat IA",
+                title: "Portafolio Web",
                 description:
-                  "Un asistente de chat inteligente potenciado por OpenAI con datos de entrenamiento personalizados",
-                image: "/placeholder.svg?height=200&width=300",
-                tech: ["Python", "OpenAI", "FastAPI", "React"],
-                github: "#",
-                demo: "#",
+                  "Sitio web personal desarrollado para mostrar mi experiencia, habilidades y proyectos. Construido con React, Next.js, TailwindCSS y Framer Motion, desplegado en Vercel.",
+                image: "/PortafolioLanding.png",
+                tech: ["React", "Next.js", "TailwindCSS", "Framer Motion"],
+                github: "https://github.com/Mariox20/MiPortafolio",
+                demo: "https://www.maguilera.cl/",
               },
               {
                 title: "Cursos de Compliance",
