@@ -55,15 +55,6 @@ export default function Projects() {
                 demo: "https://poke-explorer-ebon.vercel.app/",
               },
               {
-                title: "Sitio de Pilates FlowFit",
-                description:
-                  "Página web profesional para un estudio de pilates, desarrollada en WordPress con Elementor. Incluye sistema de reservas en línea con Amelia y pagos integrados con Transbank.",
-                image: "/FlowfitLanding.png",
-                tech: ["WordPress", "Elementor", "Amelia", "Transbank"],
-                github: "#",
-                demo: "https://flowfit.cl/",
-              },
-              {
                 title: "Portafolio Web",
                 description:
                   "Sitio web personal desarrollado para mostrar mi experiencia, habilidades y proyectos. Construido con React, Next.js, TailwindCSS y Framer Motion, desplegado en Vercel.",

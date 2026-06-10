@@ -1,12 +1,22 @@
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 
 
 //components/Hero.tsx
 export default function Hero() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    
+    // Generar posiciones consistentes entre servidor y cliente
+    const particles = useMemo(() => {
+        return [...Array(50)].map((_, i) => ({
+            id: i,
+            left: ((i * 137) % 100), // Algoritmo consistente
+            top: ((i * 71) % 100),
+            delay: (i * 0.04) % 2,
+        }))
+    }, [])
 
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId)
@@ -21,22 +31,22 @@ export default function Hero() {
         {/* Animated Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-[#4F8EF7]/10 to-[#00C896]/10 animate-pulse"></div>
-          {[...Array(50)].map((_, i) => (
+          {particles.map((particle) => (
             <motion.div
-              key={i}
+              key={particle.id}
               className="absolute w-1 h-1 bg-[#4F8EF7]/40 rounded-full"
               style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
+                left: `${particle.left}%`,
+                top: `${particle.top}%`,
               }}
               animate={{
                 y: [0, -30, 0],
                 opacity: [0.3, 1, 0.3],
               }}
               transition={{
-                duration: 3 + Math.random() * 2,
+                duration: 3 + (particle.id % 2),
                 repeat: Number.POSITIVE_INFINITY,
-                delay: Math.random() * 2,
+                delay: particle.delay,
               }}
             />
           ))}

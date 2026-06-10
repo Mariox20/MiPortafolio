@@ -61,7 +61,7 @@ export default function Contacto() {
                   {
                     icon: Github,
                     label: "GitHub",
-                    value: "@marioaguilera",
+                    value: "@Mariox20",
                     href: "https://github.com/Mariox20",
                   },
                 ].map((contact, index) => (
